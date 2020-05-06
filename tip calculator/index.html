@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="all.min.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="calc">
+        <h1 class="calc__title">💲 TIP CALCULATOR 💲</h1>
+
+        <div class="calc__input">
+            <label for="bill" class="calc__label">💳How much was your bill?</label>
+            <i class="fas fa-dollar-sign icon"></i>
+            <input type="number" id="bill" placeholder="Enter Bill Amount..">
+        </div>
+        
+        <div class="calc__input">
+                <label for="count" class="calc__label">💸How many people will share the bill?</label>
+                <i class="fas fa-user icon"></i>
+                <input type="number" id="count" placeholder="Enter Number of People..">
+        </div>
+        
+        <div class="calc__input">
+            <label for="service" class="calc__label">😊How was the service?</label>
+                <i class="fas fa-heart icon"></i>
+                <select name="services" id="service" required>
+                    <option value="" disabled selected >Rate Service...</option>
+                    <option value="0.2">Great &ndash; 20%</option>
+                    <option value="0.1">Good &ndash; 10%</option>
+                    <option value="0.02">Bad &ndash; 2%</option>
+                </select>
+        </div>
+        <button class="calc__result">Calculate</button>
+    </div>
+    
+    <div class="receipt">
+        <h2 class="title">RECEIPT</h2>
+        <p class="totalTip">Tip Amount:$000</p>
+        <p class="totalAmount">Total Amount:$000</p>
+        <p class="splitAmount">Split Amount:$000</p>
+   
+    </div>
+
+    <div class="loading">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+    </div>
+</body>
+</html>

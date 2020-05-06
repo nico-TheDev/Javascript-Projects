@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Responsive</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>Navi</h2>
+
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Projects</li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        let button = document.querySelector('.burger');
+        let links = document.getElementsByTagName('ul');
+
+        button.addEventListener('click',function(){
+
+            if(links[0].style.opacity === '0'){
+                links[0].style.opacity = '1';
+                links[0].style.pointerEvents = 'all';
+            }
+            else{
+                links[0].style.opacity = '0';
+                links[0].style.pointerEvents = 'none';
+            }
+        });
+
+    </script>
+</body>
+</html>

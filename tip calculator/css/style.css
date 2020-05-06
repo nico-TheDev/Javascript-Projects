@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.8))), url(../money.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../money.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Montserrat',sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 0;
+}
+
+.calc {
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  width: 600px;
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 2rem;
+  -webkit-box-shadow: inset -5px -5px 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: inset -5px -5px 1rem rgba(0, 0, 0, 0.5);
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 2rem;
+  justify-items: center;
+  margin-right: 1rem;
+}
+
+.calc__input {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.calc__label {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.calc input, .calc select {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  padding-left: 2.4rem;
+  width: 90%;
+  margin-right: auto;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid gray;
+}
+
+.calc input:focus, .calc select:focus {
+  border-color: green;
+}
+
+.calc input:invalid, .calc select:invalid {
+  outline: none;
+}
+
+.calc .icon {
+  font-size: 1.5rem;
+  margin-right: -2.1rem;
+  z-index: 3;
+  position: relative;
+  color: green;
+}
+
+.calc__result {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  width: 75%;
+  border: none;
+  background-color: green;
+  color: white;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.calc__result:hover {
+  background-color: limegreen;
+}
+
+.receipt {
+  width: 250px;
+  background-color: white;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 88% 88%, 79% 100%, 68% 89%, 55% 100%, 46% 90%, 28% 100%, 21% 90%, 8% 100%, 6% 88%, 0% 99%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 88% 88%, 79% 100%, 68% 89%, 55% 100%, 46% 90%, 28% 100%, 21% 90%, 8% 100%, 6% 88%, 0% 99%);
+  -webkit-box-shadow: inset 0 5px 1rem rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0 5px 1rem rgba(0, 0, 0, 0.7);
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  font-size: 1.3rem;
+  -webkit-transition: 2s ease-in;
+  transition: 2s ease-in;
+  position: relative;
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
+  height: 0;
+}
+
+.receipt .title {
+  text-align: center;
+}
+
+.receipt::before {
+  content: "";
+  width: 340px;
+  z-index: 2;
+  height: 5px;
+  background-color: lime;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 40%;
+  right: 310px;
+  opacity: 0;
+}
+
+.loading .circle {
+  width: 20px;
+  height: 20px;
+  background-color: lime;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+@-webkit-keyframes grow {
+  from {
+    -webkit-transform: scale 1;
+            transform: scale 1;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes grow {
+  from {
+    -webkit-transform: scale 1;
+            transform: scale 1;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.animate1 {
+  -webkit-animation: grow 1s 2 ease-in forwards;
+          animation: grow 1s 2 ease-in forwards;
+}
+
+.animate2 {
+  -webkit-animation: grow 1s 2 ease-in forwards 0.2s;
+          animation: grow 1s 2 ease-in forwards 0.2s;
+}
+
+.animate3 {
+  -webkit-animation: grow 1s 2 ease-in forwards 0.4s;
+          animation: grow 1s 2 ease-in forwards 0.4s;
+}
+/*# sourceMappingURL=style.css.map */

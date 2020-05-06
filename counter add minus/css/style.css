@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5))), url(/bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 700px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 5px;
+  padding: 2rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bar {
+  width: 50px;
+  height: 0%;
+  background-color: #c0392b;
+  margin-right: 2rem;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  position: absolute;
+  bottom: 0;
+}
+
+.controller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.count {
+  display: inline-block;
+  font-size: 10rem;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#c0392b), color-stop(50%, #c0392b), color-stop(50%, #2980b9));
+  background-image: linear-gradient(to bottom left, #c0392b 0%, #c0392b 50%, #2980b9 50%);
+  background-clip: text;
+  color: transparent;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+button {
+  font-size: 1.5rem;
+  border: none;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  color: white;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.add {
+  background-color: #c0392b;
+}
+
+.add:hover {
+  background-color: #962d22;
+}
+
+.minus {
+  background-color: #2980b9;
+}
+
+.minus:hover {
+  background-color: #20638f;
+}
+/*# sourceMappingURL=style.css.map */

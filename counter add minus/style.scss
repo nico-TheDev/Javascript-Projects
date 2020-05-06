@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(black,0.7),rgba(black,0.5)),url(/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container{
+    width: 700px;
+    height: 500px;
+    background-color: rgba(white,0.6);
+    box-sizing: content-box;
+    border-radius: 5px;
+    padding: 2rem;
+    position: relative;
+
+    display: flex;
+
+}
+
+$red:#c0392b;
+$blue:#2980b9;
+
+.bar{
+    width: 50px;
+    height: 0%;
+    background-color: $red;
+    margin-right: 2rem;
+    transition: all 500ms;
+    position: absolute;
+    bottom: 0;
+}
+
+.controller{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    flex: 1 ;
+}
+
+.count{
+    display: inline-block;
+    font-size: 10rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: linear-gradient(to bottom left,$red 0%,$red 50%,$blue 50%);
+    background-clip: text;
+    color:transparent;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    font-size: 1.5rem;
+    border: none;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    box-shadow: 0 0 1rem rgba(black,0.5);
+    color:white;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.add{
+    background-color: $red;
+
+    &:hover{
+        background-color: darken($red,10%);
+    }
+}
+
+.minus{
+    background-color: $blue;
+
+    &:hover{
+        background-color: darken($blue,10%);
+    }
+}

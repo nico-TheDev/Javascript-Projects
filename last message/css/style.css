@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  background: #e1eec3;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#f05053), to(#e1eec3));
+  background: linear-gradient(to right, #f05053, #e1eec3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.message {
+  text-align: center;
+  width: 600px;
+  background-color: white;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+#message-content {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  color: #f05053;
+  border: 1px solid #f05053;
+  margin-bottom: 1rem;
+}
+
+#message-content::-webkit-input-placeholder {
+  text-align: center;
+}
+
+#message-content:-ms-input-placeholder {
+  text-align: center;
+}
+
+#message-content::-ms-input-placeholder {
+  text-align: center;
+}
+
+#message-content::placeholder {
+  text-align: center;
+}
+
+.btn {
+  font-size: 1.1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #f05053;
+  color: white;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ec2125;
+}
+/*# sourceMappingURL=style.css.map */
