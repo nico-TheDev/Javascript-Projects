@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 3rem;
+  justify-items: center;
+  background: #2c3e50;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#3498db), to(#2c3e50));
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  position: absolute;
+}
+
+.player1 {
+  top: 2rem;
+  left: 2rem;
+}
+
+.player2 {
+  top: 2rem;
+  right: 2rem;
+}
+
+.board {
+  width: 500px;
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -webkit-box-shadow: 0 0 2rem rgba(255, 255, 255, 0.4);
+          box-shadow: 0 0 2rem rgba(255, 255, 255, 0.4);
+}
+
+.tile {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: #27ae60;
+  font-size: 5rem;
+}
+
+.tile:hover {
+  background-color: #2ecc71;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.popup__title {
+  font-size: 3rem;
+  color: white;
+}
+
+.popup .new {
+  margin-top: 2rem;
+  font-size: 2rem;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.popup .new:hover {
+  background-color: #27ae60;
+}
+
+.open {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=style.css.map */
