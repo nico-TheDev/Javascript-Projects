@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background: #c31432;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#240b36), to(#c31432));
+  background: linear-gradient(to right, #240b36, #c31432);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+  color: white;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.form {
+  min-width: 13rem;
+  width: 60%;
+  padding: 2rem;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.form__group {
+  position: relative;
+}
+
+.form__input {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid gray;
+}
+
+.form__input:focus, .form__input:active {
+  outline: none;
+  border-color: green;
+}
+
+.form__input:invalid {
+  border-color: red;
+}
+
+.form__label {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.form .btn {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border: 2px solid crimson;
+  color: crimson;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.form .btn:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.gallery {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(13rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+.colored {
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0.2rem;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  background-color: #2c3e50;
+  color: black;
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+  padding-bottom: 2rem;
+  color: white;
+}
+
+.card__cover {
+  height: 50%;
+  background-image: url(../img/9.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  padding: 0.5rem 1rem;
+}
+
+.card__name .colored {
+  background-color: #e74c3c;
+}
+
+.card__course .colored {
+  background-color: #2980b9;
+}
+
+.card__author .colored {
+  background-color: #8e44ad;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins',sans-serif;
+  background: #DCE35B;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#45B649), to(#DCE35B));
+  background: linear-gradient(to right, #45B649, #DCE35B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header {
+  padding: 1rem;
+  margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  background-color: #2ecc71;
+  color: white;
+  border: 1px solid #2ecc71;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #2ecc71;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.nav .title {
+  color: white;
+}
+
+.nav .add-card {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #2ecc71;
+  color: #2ecc71;
+  background-color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.nav .add-card:hover {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.question {
+  width: 400px;
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.question textarea {
+  width: 100%;
+  height: 100px;
+  padding: 0.5rem;
+  font-family: inherit;
+}
+
+.question__field {
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  padding: 1rem;
+  width: 90%;
+  margin: 1rem auto;
+  background-color: white;
+}
+
+.gallery .title {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.flashcards {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+  grid-gap: 1rem;
+}
+
+.flashcard {
+  width: 300px;
+  min-height: 300px;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+  -webkit-box-shadow: 0 0 1rem rgba(142, 68, 173, 0.7);
+          box-shadow: 0 0 1rem rgba(142, 68, 173, 0.7);
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 1rem;
+  -ms-grid-rows: max-content 1fr max-content max-content;
+      grid-template-rows: -webkit-max-content 1fr -webkit-max-content -webkit-max-content;
+      grid-template-rows: max-content 1fr max-content max-content;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.flashcard__answer {
+  display: none;
+  word-break: break-all;
+}
+
+.flashcard__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flashcard__buttons button {
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.flashcard__buttons .edit {
+  color: #2ecc71;
+  padding: 5px;
+  border: 1px solid #2ecc71;
+}
+
+.flashcard__buttons .edit:hover {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.flashcard__buttons .delete {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  padding: 5px 8px;
+  border: 1px solid #e74c3c;
+}
+
+.flashcard__buttons .delete:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.open {
+  display: block;
+}
+
+.show {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
