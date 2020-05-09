@@ -33,7 +33,7 @@ let UIController = (function(){
             let htmlCard,element;
             element = document.querySelector(DOMStrings.gallery);
             htmlCard = ` <div class="card">
-            <div class="card__cover" style="background-image:url(../img/${ Math.floor(Math.random() * 9)}.jpg);"></div>
+            <div class="card__cover" style="background-image:url(./img/${ Math.floor(Math.random() * 9)}.jpg);"></div>
             <p class="card__name"><span class="colored">Name:</span> <span class="nameText">${obj.name}</span></p>
             <p class="card__course"><span class="colored">Course:</span> <span class="courseText">${obj.course}</span></p>
             <p class="card__author"><span class="colored">Author:</span> <span class="authorText">${obj.author}</span></p>
