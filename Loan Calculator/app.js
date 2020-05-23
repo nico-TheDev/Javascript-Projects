@@ -39,9 +39,7 @@ function calculateResult() {
         document.getElementById('results').style.display = 'block';
         document.querySelector('.loading').style.display = 'none';
 
-        document.querySelectorAll('input').forEach(input=>{
-            input.value = '';
-        });
+     
     }else{
         showError('Please check your inputs');
     }
