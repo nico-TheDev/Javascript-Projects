@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    height: 100vh;
+    background-color: #111;
+    display: grid;
+    place-items: center;
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius:50%;
+    border: 5px solid limegreen;
+    position: relative;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+
+    &__number{
+        position: absolute;
+        font-size: 1.5rem;
+        color: lime;
+    }
+
+    &:hover .thumb .hour-hand,
+    &:hover .thumb .minute-hand,
+    &:hover .thumb .second-hand{
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+.cover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.thumb{
+    width: 20px;
+    height: 20px;   
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
+    .hour-hand,
+    .minute-hand,
+    .second-hand{
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%) rotate(0);  
+     left: 10px; 
+    }
+
+    .hour-hand{
+        width: 100px;
+        height: 10px;
+        background-color: orange;
+        border-radius: 1rem;
+        transform-origin: left;
+
+    }
+
+    .minute-hand{
+        width: 120px;
+        height: 5px;
+        background-color: green;
+        transform-origin: left;
+    }
+    .second-hand{
+        width: 120px;
+        height: 5px;
+        background-color: red;
+        transform-origin: left;
+    }
+}
+
+.one{
+    
+}
+
+.three{
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+
+
+.six{
+    bottom: 1rem;
+}
+
+.nine{
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.twelve{
+    top: 1rem;
+}
+
+
+
+

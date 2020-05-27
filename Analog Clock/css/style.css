@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background-color: #111;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid limegreen;
+  position: relative;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.clock__number {
+  position: absolute;
+  font-size: 1.5rem;
+  color: lime;
+}
+
+.clock:hover .thumb .hour-hand,
+.clock:hover .thumb .minute-hand,
+.clock:hover .thumb .second-hand {
+  -webkit-transform: translateY(-50%) rotate(360deg);
+          transform: translateY(-50%) rotate(360deg);
+}
+
+.cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.thumb {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  position: relative;
+}
+
+.thumb .hour-hand,
+.thumb .minute-hand,
+.thumb .second-hand {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(0);
+          transform: translateY(-50%) rotate(0);
+  left: 10px;
+}
+
+.thumb .hour-hand {
+  width: 100px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 1rem;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.thumb .minute-hand {
+  width: 120px;
+  height: 5px;
+  background-color: green;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.thumb .second-hand {
+  width: 120px;
+  height: 5px;
+  background-color: red;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.three {
+  top: 50%;
+  right: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.six {
+  bottom: 1rem;
+}
+
+.nine {
+  top: 50%;
+  left: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.twelve {
+  top: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

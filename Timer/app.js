@@ -37,7 +37,8 @@ function countdown(){
 
 
     const timeNow = new Date();
-    const releaseDate = new Date(2020,5,19,12,0,0);
+    // const releaseDate = new Date(2020,5,19,12,0,0);
+    const releaseDate = new Date('June 19, 2020 24:00:00 GMT-07:00');
 
     // console.log(timeNow);
     // console.log(releaseDate);
