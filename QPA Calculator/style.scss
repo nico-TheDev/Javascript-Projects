@@ -55,7 +55,7 @@ button {
     margin-bottom: 2rem;
 }
 .grid {
-    height: 90vh;
+    min-height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -158,7 +158,8 @@ input,select{
     background-color: white;
     grid-column: span 2;
     color: black;
-    
+    height: 40vh;
+    overflow-y: scroll;
     .row{
         display: grid;
         grid-template-columns: repeat(7,1fr);
@@ -201,4 +202,8 @@ input,select{
     &:hover{
         background-color:lighten($main,20%);
     }
+}
+
+.add{
+    margin-bottom: 1rem;
 }

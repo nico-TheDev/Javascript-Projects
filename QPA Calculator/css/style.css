@@ -60,7 +60,7 @@ button {
 }
 
 .grid {
-  height: 90vh;
+  min-height: 90vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -183,6 +183,8 @@ input, select {
   background-color: white;
   grid-column: span 2;
   color: black;
+  height: 40vh;
+  overflow-y: scroll;
 }
 
 .table .row {
@@ -235,5 +237,9 @@ input, select {
 
 .btn:hover {
   background-color: #60db94;
+}
+
+.add {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
