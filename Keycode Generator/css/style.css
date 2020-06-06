@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  background: #141e30;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#243b55), to(#141e30));
+  background: linear-gradient(to right, #243b55, #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.sub {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.letter {
+  background-color: white;
+  color: black;
+  min-width: 3rem;
+  min-height: 3rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 0.3rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-size: 1.5rem;
+  border: 1rem solid transparent;
+  border-right-color: gray;
+  border-left-color: gray;
+  border-top-color: #8f8e8e;
+  border-bottom-color: #8f8e8e;
+}
+/*# sourceMappingURL=style.css.map */

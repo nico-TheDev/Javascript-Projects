@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyCode Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1 class="title">Press the key for keycode</h1>
+    <p class="sub">Keycode</p>
+    <p class="letter">Key</p>
+
+    <script>
+        window.addEventListener('keydown',getKey);
+
+        function getKey(e){
+            const keyNum = e.keyCode,
+                  key = e.key;
+            document.querySelector('.title').style.fontSize = '10rem';
+            document.querySelector('.title').textContent = keyNum;
+            document.querySelector('.letter').textContent = key;  
+        }
+
+
+    </script>
+</body>
+</html>
