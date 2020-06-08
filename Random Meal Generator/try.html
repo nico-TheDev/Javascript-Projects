@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Meal Generator</title>
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <script src="app.js" defer></script>
+
+    <style>
+        div{
+            height: 100vh;
+            font-size: 5rem;
+            display: grid;
+            place-items: center;
+        }
+
+        div:nth-child(odd){
+            background-color: black;
+            color: white;
+        }
+
+        .bot{
+            animation:anim 500ms ease forwards;
+            animation-play-state: paused;
+        }
+
+        @keyframes anim {
+            from{background-color: black;}
+            to{background-color: blue;}
+        }
+    </style>
+</head>
+<body>
+    <div class="top">TOP</div>
+    <div class="mid">MID</div>
+    <div class="bot">BOT</div>
+
+    <script>
+        const topDoc = document.querySelector('.top');
+        const mid = document.querySelector('.mid');
+        const bot = document.querySelector('.bot');
+
+        window.onscroll = function(){
+            const windowOffsetY = window.scrollY;
+
+            if(windowOffsetY > bot.offsetTop){
+                bot.style.animationPlayState = 'running';                
+            }
+            console.log(window.scrollY);
+        }
+
+        bot.addEventListener('animationend',() =>{
+            bot.remove();
+        });
+
+    </script>
+</body>
+</html>
