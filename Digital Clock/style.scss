@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'alarm clock','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background-color: #27ae91;
+    display: grid;
+    place-items: center;
+}
+
+.clock{
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    height: 200px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    .screen{
+        background-color: #2c3e50;
+        color: #2ecc71;
+        width: 350px;
+        height: 170px;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+    }
+
+    .time{
+        font-size: 4.5rem;
+    }
+
+    .foot{
+        position: absolute;
+        width: 70px;
+        height: 20px;
+        border-radius: 0 0 10px 10px;
+        background-color: #2c3e50;
+        bottom: -20px;
+    }
+
+    .left{
+        left: 40px;
+    }
+    .right{
+        right: 40px;
+    }
+
+    .head{
+        position: absolute;
+        top: -10px;
+        background-color: crimson;
+        width: 200px;
+        height: 10px;
+        border-radius: 10px 10px 0 0 ;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .shadow{
+        position: absolute;
+        bottom: 0;
+        width: 450px;
+        height: 100px;
+        background-color: rgba(black,0.3);
+        filter: blur(5px);
+        background-position: center;
+        border-radius: 50%;
+        z-index: -1;
+        bottom: -65px;
+    }
+}
