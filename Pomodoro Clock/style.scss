@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+$main:#2ecc71;
+$main-dark:#27ae60;
+
 *,
 *::before,
 *::after{
@@ -13,5 +18,84 @@ html{
 body{
     line-height: 1.5;
     font-family: 'Open Sans',sans-serif;
+    background-color: $main;
+    color: white;
+}
+
+button{
+    transition: 300ms;
+    color: inherit;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: inherit;
+
+    &:hover{
+        background-color: darken($main-dark,10%);
+    }
+}
+
+.app{
+    min-height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 2rem;
+    &__title{
+        font-size: 3rem;
+    }
+
+    &__timer{
+        background-color: $main;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 50%;
+        display: grid;
+        gap: 1rem;
+        justify-items:center;
+
+        border-radius: 50px;
+background: #2ecc71;
+box-shadow:  20px 20px 60px #27ad60, 
+             -20px -20px 60px #35eb82;
+    }
+
+    &__buttons{
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+
+    &__btn{
+        background-color: $main-dark;
+        border-radius: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    &__ctrl{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    &__start,
+    &__pause
+    {
+        background-color: $main-dark;
+        padding: 0.5rem 3rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        border-radius: 1rem;
+
+      
+    }
+
+    &__time{
+        font-size: 5rem;
+        font-weight: bold;
+    }
 }
 

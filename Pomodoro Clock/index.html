@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro Clock</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pomodoro Clock</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-</body>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <div class="app">
+            <h1 class="app__title">Pomodoro Timer</h1>
+            <div class="app__timer">
+                <div class="app__buttons">
+                    <button class="app__btn" data-value="1500000">
+                        Pomodoro
+                    </button>
+                    <button class="app__btn" data-value="300000">
+                        Short Break
+                    </button>
+                    <button class="app__btn" data-value="900000">
+                        Long Break
+                    </button>
+                </div>
+                <div class="app__time">
+                    <span class="minutes">25</span>:<span class="seconds"
+                        >00</span
+                    >
+                </div>
+                <div class="app__ctrl">
+                    <button class="app__start">Start</button>
+                    <button class="app__pause">Pause</button>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
